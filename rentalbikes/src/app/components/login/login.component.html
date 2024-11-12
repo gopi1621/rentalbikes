@@ -1,0 +1,23 @@
+<p>login works!</p>
+<div class="container">
+    <div class="row">
+        <h1 appHighlight>Login Here</h1>
+        <div class="col-md-6">
+            <form [formGroup]="loginForm">
+                <div class="form-group">
+                    <label for="username" class="form-label">Username</label>
+                    <input id="username" type="text" formControlName="username" />
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <input id="password" type="password" formControlName="password" />
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success" type="submit" (click)="checkLogin()">
+                        Login
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
